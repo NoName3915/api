@@ -26,7 +26,7 @@ if (isset($_SESSION["user_id"])) {
 </head>
 <body>
     
-    <h1>Data Management System</h1>
+    <h1>Document Tracking System</h1>
 	
     <!--supposed main page or landing page, 
 	will be provided ba the other team--> 
