@@ -22,7 +22,7 @@ if (isset($_SESSION["user_id"])) {
     <meta charset="UTF-8">
 	
     <!--front end can link their css file here-->	
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="ui.css">
 </head>
 <body>
     
