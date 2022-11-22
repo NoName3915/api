@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
 	
     <!--intended for front end-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="ui.css">
 </head>
 <body>
     
