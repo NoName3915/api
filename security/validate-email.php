@@ -1,7 +1,7 @@
 <?php
 
 $mysqli = require __DIR__ . "/database.php";
-
+//test comment
 //Check the database for any similar emails 
 //If email similarities are found will execute process-signup.php to prompt "email already taken"
 
