@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
 	
     <!-- style from front team -->
-    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+	 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		.center {
+			text-align: center;
+			}
+	</style>
 </head>
 <body>
-	   <p>Successfully Signed-in.
-       You can now <a href="login.php">log in</a>.</p>
+	<div class="center">
+		
+	<p>Successfully Signed-in.
+	You can now <a href="login.php">log in</a>.</p>
+		
+	<form action="login.php">
+        <button type="submit" class="btn btn-primary">Login</button>
        <!--Above hyperlink directs the user to the log-in
          page after successfully creating an account-->
+	</div>
 </body>
 </html>
