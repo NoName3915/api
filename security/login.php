@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <head>
     <title>Login</title>
     <meta charset="UTF-8">
@@ -44,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
     
-    <h1>Login</h1>
+    <h1 align="center">Login</h1>
     
     <!-- Conditional to check the credentials -->
     <?php if ($is_invalid): ?>
@@ -52,15 +53,34 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php endif; ?>
     
     <form method="post">
-        <label for="email">email</label>
+
+    <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
+            
+          </div>
+
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" class="form-control" name="password" aria-describedby="passwordHelpBlock" placeholder="Enter Password">
+          </div>
+        <!-- <label for="email">email</label>
         <input type="email" name="email" id="email"
                value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
         
         <label for="password">Password</label>
         <input type="password" name="password" id="password">
+    -->
         
-        <button>Log in</button>
+    <center> <button type="submit" class="btn btn-primary">Log in</button></center>
     </form>
+
+    <style>
+        form{
+            width: 500px;
+            padding: 20px;
+            margin:auto;
+        }
+    </style>
     
 </body>
 </html>
