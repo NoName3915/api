@@ -38,9 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <title>Login</title>
     <meta charset="UTF-8">
-	
+    
     <!--intended for front end-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="ui.css">
 </head>
 <body>
     
@@ -64,11 +64,3 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
 </body>
 </html>
-
-
-
-
-
-
-
-
