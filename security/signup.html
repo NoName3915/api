@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <head>
     <title>Signup</title>
     <meta charset="UTF-8">
@@ -12,32 +13,39 @@
 </head>
 <body>
     
-    <h1>Signup</h1>
-    
-    <form action="process-signup.php" method="post" id="signup" novalidate>
-        <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
-        </div>
-        
-        <div>
-            <label for="email">email</label>
-            <input type="email" id="email" name="email">
-        </div>
-        
-        <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-        </div>
-        
-        <div>
-            <label for="password_confirmation">Repeat password</label>
-            <input type="password" id="password_confirmation" name="password_confirmation">
-        </div>
-        
-        <button>Sign up</button>
+    <h1 align="center">Signup</h1>
 
-    </form>
+    <form action="process-signup.php" method="post" id="signup" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" class="form-control" name="password" aria-describedby="passwordHelpBlock" placeholder="Enter Password">
+          </div>
+<br>
+<br> 
+          <div class="form-group">
+            <label for="password_confirmation">Repeat Password</label>
+            <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Re-Enter Password">
+          </div>
+
+       <center> <button type="submit" class="btn btn-primary">Submit</button></center>
+
+      </form>
     
+    <style>
+        form{
+            width: 500px;
+            padding: 20px;
+            margin:auto;
+        }
+    </style>
 </body>
 </html>
